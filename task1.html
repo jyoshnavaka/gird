@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:grid;
+            grid-template-rows: 20px 20px 50px 50px 40px;
+            grid-template-columns: 100px 100px 100px 100px 100px;
+            justify-content: center;
+            align-content: center;
+           
+            width:500px;
+            height:400px;
+        }
+        .container:hover{
+            gap:3px;
+        }
+        .child{
+            border: 2px solid black;
+            text-align: center;
+        }
+        .child:hover:nth-child(1){
+            background-color: aqua;
+        }
+        .child:hover:nth-child(2){
+            background-color: brown;
+        }
+        .child:hover:nth-child(3){
+            background-color: chartreuse;
+        }
+        .child:hover:nth-child(4){
+            background-color: coral;
+        }
+        .child:hover:nth-child(5){
+            background-color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"><div  class="child"style="grid-column: 1/4;">Header Section</div>
+    <div class="child"style="grid-column: 1/4;">Navigation Bar</div>
+    <div class="child" style="grid-row: 3/5;  ">Index</div>
+    <div class="child"style="grid-row: 3/5; grid-column:2/4;  ">Content section</div>
+    <div class="child" style="grid-column: 1/4;">Footer Section</div>
+</div>
+</body>
+</html>
